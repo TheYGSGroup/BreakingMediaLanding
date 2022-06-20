@@ -1,0 +1,328 @@
+@import "_variables";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.35s all cubic-bezier(0.55, 0.085, 0, 0.99);
+    cursor: pointer;
+
+    &:visited, &:active {
+        text-decoration: none;
+        transition: 0.35s all cubic-bezier(0.55, 0.085, 0, 0.99);
+        cursor: pointer;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.whiteLink {
+    color: $White;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 6px 0;
+    color: $White;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 58px;
+    margin: 6px 0;
+    color: $Black;
+    font-weight: 600;
+    max-width: 615px;
+}
+
+h5:before {
+    content: " ";
+    background: $RV-header-before;
+    display: block;
+    width: 82px;
+    height: 7px;
+    margin-bottom: 29.5px;
+    margin-top: 50px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 15px 0 12px 0;
+    font-weight: 600;
+    color: $RV-h3;
+    max-width: 615px;
+}
+
+h4 {
+    color: $White;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 8px 0;
+    margin-bottom: 16px;
+}
+
+p {
+    margin: 8px 0;
+    width: 55%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ol,
+ul {
+    padding-inline-start: 15px;
+}
+
+ol ul,
+ul ol,
+ul ul,
+ol ol {
+    padding-inline-start: 25px;
+}
+
+ol li ul li,
+ol li,
+ul li {
+    margin-top: 16px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 25px;
+    background: $cnetRed;
+    color: $White;
+    padding: 7px 30px;
+    transition: 0.35s all cubic-bezier(0.55, 0.085, 0, 0.99);
+
+    &:hover {
+        background: $cnetDarkerRed;
+    }
+}
+
+.license-button {
+    margin-top: 54px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 80px;
+    background: $HeaderFooterBG 0% 0% no-repeat padding-box;
+    padding-left: 7%;
+    padding-right: 7%;
+    color: $White;
+}
+
+header a {
+    color: $White;
+    margin-left: auto;
+    font-weight: 700;
+}
+
+header a:hover {
+    color: #e0e0e0;
+}
+
+header .logos {
+    max-width: 209px;
+    margin-right: 20px;
+}
+
+#hero-section {
+    // background: url(../Images/hero.png) no-repeat no-repeat 0 0;
+    // background-size: cover;
+    // height: calc(100vh - 180px);
+    display: block;
+    padding-left: 7%;
+    padding-right: 7%;
+    // text-align: left;
+    // position: relative;
+    // padding-bottom: 100px;
+    // margin-bottom: 230px;
+    //TODO: TURNED OFF UNTIL READY TO SEND TO QA
+    // min-height: 680px;
+}
+
+// #hero-section:after {
+//     content: " ";
+//     background: linear-gradient(0, $Black 50%, $White 50%);
+//     display: block;
+//     width: 4px;
+//     height: 200px;
+//     position: absolute;
+//     left: 50%;
+//     margin-left: -2px;
+//     //TODO: GULP-SASS IS BEING DUMB SO YOU WILL HAVE TO MANUALLY ADD IN THE max() into the CSS file when sending off to QA commented out for ease of use
+//     // top: max(calc(100vh - 180px), 680px);
+//     top: calc(100vh - 180px);
+// }
+
+#hero-section span.contactInfo {
+    display: block;
+    line-height: 19px;
+    color: $Black;
+    padding-top: 29px;
+
+    a {
+        color: $Black;
+    }
+}
+
+// #hero-section h1 {
+//     display: block;
+//     margin-top: calc(25vh - 40px);
+// }
+
+// #hero-section span.subTitle {
+//     display: block;
+//     font-size: 36px;
+//     line-height: 44px;
+//     margin: 6px 0;
+//     margin-top: 43px;
+//     color: $White;
+// }
+
+#licensing,
+#brands,
+#LicenseNow,
+#licensingNote {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#brands {
+    margin-top: 100px;
+}
+
+#licensing .phone {
+    max-width: 45%;
+    display: inline-block;
+    float: right;
+}
+
+.brand-display {
+    margin-top: 38px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.brand-display div {
+    max-width: 46%;
+    flex: 1 1 50%;
+    padding-bottom: 60px;
+}
+
+.brand-display div img {
+    width: 100%;
+    // border-radius: 10px;
+    box-shadow: 0 20px 36px 0 rgba(0, 0, 0, 0.1);
+}
+
+#LicenseNow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#LicenseNow div {
+    flex: 1;
+}
+
+#LicenseNow sup {
+    color: $cnetRed;
+}
+
+#license-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+textarea {
+    resize: none;
+    height: 283px;
+}
+
+textarea,
+input {
+    border-radius: 4px;
+    border: #DDDDDD 1px solid;
+    padding: 20px 30px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+    font-size: 16px;
+    line-height: 22px;
+    width: calc(100% - 110px);
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 25px;
+}
+
+button {
+    margin-top: 30px;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    // height: 353px;
+    background: $HeaderFooterBG 0% 0% no-repeat padding-box;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    color: $White;
+    margin-top: 100px;
+}
+
+footer p {
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    width: 100%;
+}
+
+footer #col2 {
+    margin-left: 50px;
+}
+
+@import "media_queries";
