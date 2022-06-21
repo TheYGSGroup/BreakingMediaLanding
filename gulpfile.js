@@ -1,40 +1,25 @@
-﻿/// <binding />
-/*
-This file is the main entry point for defining Gulp tasks and using Gulp plugins.
-Click here to learn more. https://go.microsoft.com/fwlink/?LinkId=518007
-*/
+﻿const { task, watch, src, dest, parallel } = require('gulp')
+const autoprefixer = require('autoprefixer')
+const postcss = require('gulp-postcss')
+const postcssNested = require('postcss-nested')
+const sourcemaps = require('gulp-sourcemaps')
+const cssnano = require('cssnano');
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var rename = require('gulp-rename');
-var autoprefixer = require('gulp-autoprefixer');
-var csso = require('gulp-csso');
-var sourcemaps = require('gulp-sourcemaps');
+function style() {  
+    return (
+            src('src/**/*.css')
+            .pipe( sourcemaps.init() )
+            .pipe( postcss([ autoprefixer(), postcssNested(), cssnano() ]) )
+            .pipe( sourcemaps.write('.') )
+            .pipe( dest('css/') )
+    );
+}
 
-gulp.task('sass', function () {
-    return gulp.src('./SASS/main.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(concat('main.css'))
-        .pipe(gulp.dest('./CSS'))
-        .pipe(rename('main.min.css'))
-        .pipe(autoprefixer({overrideBrowserslist: [
-            'ie >= 10',
-            'ie_mob >= 10',
-            'ff >= 30',
-            'chrome >= 34',
-            'Safari >= 7',
-            'Opera >= 23',
-            'ios >= 7',
-            'Android >= 4.4',
-            'bb >= 10'
-        ]}))
-        .pipe(csso())
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./CSS'));
-});
+function watchTask() {
+    return watch(['src/**/*.css'], parallel(style) )
+}
 
-gulp.task('watch', function () {
-    gulp.watch('./SASS/*.scss', gulp.series('sass'));
-});
+task('default', parallel(style));
+
+exports.style = style;
+exports.watch = watchTask;
