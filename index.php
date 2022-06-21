@@ -41,8 +41,8 @@
         <div id="col1">
             <h4>The YGS Group</h4>
             <p>Official Licensing Partner of Breaking Media</p>
-            <p>(800) 290-5460<br>
-            <a href="mailto:breakingmedia@theygsgroup.com" target="_blank" class="whiteLink">BreakingMedia@theygsgroup.com</a></p>
+            <p><a href="tel:8002905460" class="whiteLink">(800) 290-5460</a></p>
+            <p><a href="mailto:breakingmedia@theygsgroup.com" target="_blank" class="whiteLink">BreakingMedia@theygsgroup.com</a></p>
         </div>
     </footer>
 </body>

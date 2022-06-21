@@ -199,7 +199,7 @@ header .logos {
 
 #hero-section h1 {
     display: block;
-    margin-top: calc(25vh - 40px);
+    margin-top: calc(29vh - 40px);
 }
 
 #hero-section span.subTitle {
@@ -221,6 +221,11 @@ header .logos {
 #licensing {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
+    
 
     h3 {
         color: var(--primary);
@@ -359,6 +364,10 @@ ol h4 {
     color: var(--Black);
 }
 
+.alignWithOL {
+    margin-left: -1rem;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -385,6 +394,10 @@ footer #col2 {
     margin-left: 50px;
 }
 
+#hero-section h1 {
+    max-width: 50vw;
+}
+
 /* 
  Media Queries
 */
@@ -394,6 +407,7 @@ footer #col2 {
     #hero-section h1 {
         display: block;
         margin-top: calc(10vh - 40px);
+        max-width: inherit;
     }
 }
 

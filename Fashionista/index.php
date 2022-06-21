@@ -87,7 +87,7 @@
                 <form class="contact-form" action="submit.php" method="POST">
                 <!-- <form class="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"> -->
                     <input type=hidden name="oid" value="a070c000012bIYR"> <!-- Organization ID, will not change -->
-                    <input type=hidden name="retURL" value="https://www.rvlicensing.com/ThePointsGuy/index.php?ty=true">
+                    <input type=hidden name="retURL" value="https://breakingmediaLicensing.com/Fashionista/index.php?ty=true">
 
                         <!--  ----------------------------------------------------------------------  -->
                         <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -106,7 +106,7 @@
                     <input type="text" id="Phone" name="Phone" placeholder="ex. (555) 123-4567">
                     <label for="Email">Email <sup>*</sup></label>
                     <input type="text" id="Email" name="Email" placeholder="ex. john.doe@gmail.com">
-                    <label for="ArticleName">Article name</label>
+                    <label for="ArticleName">Article title</label>
                     <input type="text" id="ArticleName" name="ArticleName" placeholder="ex. The best site to...">
                     <label for="ArticleURL">Article URL (if online)</label>
                     <input type="text" id="ArticleURL" name="ArticleURL" placeholder="ex. https://myarticleurl.com">
@@ -161,15 +161,15 @@
                 <ol>
                     <li>
                         <h4>What is the benefit of licensing?</h4>
-                        <p>Fashionista is a trusted source of fashion news, criticism, and career advice with a monthly readership of more than 2.5 million. As one of the most influential voices covering fashion, Fashionista is an agenda-setter for the industry as well as influential fashion-focused consumers. Leveraging your award seal in the marketplace can make an impact amongst your prospective customers.</p>
+                        <p class="alignWithOL">Fashionista is a trusted source of fashion news, criticism, and career advice with a monthly readership of more than 2.5 million. As one of the most influential voices covering fashion, Fashionista is an agenda-setter for the industry as well as influential fashion-focused consumers. Leveraging your award seal in the marketplace can make an impact amongst your prospective customers.</p>
                     </li>
                     <li>
                         <h4>What is the turnaround time on licensing approval?</h4>
-                        <p>Turnaround time is 24 hours after receipt of payment and submission of creative for approval. All creative material must be approved before it is distributed.</p>
+                        <p class="alignWithOL">Turnaround time is 24 hours after receipt of payment and submission of creative for approval. All creative material must be approved before it is distributed.</p>
                     </li>
                     <li>
                         <h4>What do I do when the license expires?</h4>
-                        <p>If you wish to continue using the quote or seal license after it has expired, you may reach out to YGS directly at: <a href="mailto:breakingmedia@theYGSgroup.com">breakingmedia@theYGSgroup.com</a> and we can provide you with a renewal quote. Should you decide to not renew for another term, please remove the creative from your website, email signature, collateral, etc… and cease use of the previously licensed content.</p></li>
+                        <p class="alignWithOL">If you wish to continue using the quote or seal license after it has expired, you may reach out to YGS directly at: <a href="mailto:breakingmedia@theYGSgroup.com">breakingmedia@theYGSgroup.com</a> and we can provide you with a renewal quote. Should you decide to not renew for another term, please remove the creative from your website, email signature, collateral, etc… and cease use of the previously licensed content.</p></li>
                 </ol>
             </div>
         </div>
@@ -177,9 +177,9 @@
     <footer>
         <div id="col1">
             <h4>The YGS Group</h4>
-            <p>Official Licensing Partner of Fashionista<br>
-            (800) 290-5460<br>
-            <a href="mailto:breakingmedia@theygsgroup.com" target="_blank" class="whiteLink">breakingmedia@theygsgroup.com</a></p>
+            <p>Official Licensing Partner of Fashionista</p>
+            <p><a href="tel:8002905460" class="whiteLink">(800) 290-5460</a></p>
+            <p><a href="mailto:breakingmedia@theygsgroup.com" target="_blank" class="whiteLink">breakingmedia@theygsgroup.com</a></p>
         </div>
     </footer>
 </body>
