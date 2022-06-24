@@ -20,7 +20,7 @@
     </header>
     <div id="content">
         <div id="hero-section">
-            <span class="contactInfo">(800) 290-5460&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:breakingmedia@theygsgroup.com" target="_blank" class="whiteLink">breakingmedia@theygsgroup.com</a></span>
+            <span class="contactInfo"><a href="tel:8002905460" class="whiteLink">(800) 290-5460</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:breakingmedia@theygsgroup.com" target="_blank" class="whiteLink">breakingmedia@theygsgroup.com</a></span>
             <h1>Your product received valuable editorial recognition</h1>
             <span class="subTitle">Empower your marketing by letting customers know!</span>
         </div>

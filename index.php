@@ -19,7 +19,7 @@
     </header>
     <div id="content">
         <div id="hero-section">
-            <span class="contactInfo">(800) 290-5460&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:breakingmedia@theygsgroup.com" target="_blank">breakingmedia@theygsgroup.com</a></span>
+            <span class="contactInfo"><a href="tel:8002905460">(800) 290-5460</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:breakingmedia@theygsgroup.com" target="_blank">breakingmedia@theygsgroup.com</a></span>
         </div>
         <div id="brands">
             <h2>Our brands</h2>

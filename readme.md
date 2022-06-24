@@ -1,9 +1,9 @@
 # Breaking Media
 
-**Production:** [breakingmediaLicensing.com](https://breakingmediaLicensing.com)
-**Development:** [dev.breakingmedialicensing.com](https://dev.breakingmedialicensing.com)
-**Location:** Host02 (/home/breakingmedia/public_html/)
-**Repo:** @TODO - Add remote repo location
+**Production:** [breakingmediaLicensing.com](https://breakingmediaLicensing.com)  
+**Development:** [dev.breakingmedialicensing.com](https://dev.breakingmedialicensing.com)  
+**Location:** Host02 (/home/breakingmedia/public_html/)  
+**Repo:** @TODO - Add remote repo location  
 
 This project includes a docker-compose.yml file to handle local development. Do not include this file when updating the version on the server.  
 
