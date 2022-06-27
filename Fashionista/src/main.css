@@ -66,7 +66,7 @@ h2:before {
     width: 82px;
     height: 7px;
     margin-bottom: 29.5px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 h3 {
@@ -265,6 +265,7 @@ header .logos {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 #LicenseNow div {
@@ -284,6 +285,8 @@ header .logos {
 #licensing .col-two {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
+
     & > h2 {
         font-size: 34px;
         color: var(--primary);
@@ -301,9 +304,12 @@ header .logos {
     display: flex;
     font-weight: 500;
     margin-bottom: 31px;
-
+    
     &-icon {
         width: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &-stat {
         padding-left: 30px;
