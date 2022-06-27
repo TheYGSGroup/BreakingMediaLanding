@@ -1,7 +1,7 @@
 # Breaking Media
 
-**Production:** [breakingmediaLicensing.com](https://breakingmediaLicensing.com)  
-**Development:** [dev.breakingmedialicensing.com](https://dev.breakingmedialicensing.com)  
+**Production:** [breakingmedialicensing.com](https://breakingmedialicensing.com)  
+<!-- **Development:** [dev.breakingmedialicensing.com](https://dev.breakingmedialicensing.com)   -->
 **Location:** Host02 (/home/breakingmedia/public_html/)  
 **Repo:** https://github.com/TheYGSGroup/BreakingMediaLanding  
 
