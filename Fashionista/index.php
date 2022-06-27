@@ -8,8 +8,8 @@
   	<meta name="description" content="The official licensing partner of Fashionista">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="CSS/normalize.css" rel="stylesheet">
-  	<link href="CSS/main.css?ver=1.0.0" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+  	<link href="css/main.css?ver=1.0.0" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
@@ -84,10 +84,10 @@
                 <h2>License now</h2>
                 <h3>Ready to license? Have some more questions?</h3>
                 <p>Allow one of our content sales and licensing account executives to assist you! Complete the form below, and we will be in touch in 1-2 business days.</p>
-                <form class="contact-form" action="submit.php" method="POST">
+                <form class="contact-form" action="submit.php" method="post">
                 <!-- <form class="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"> -->
                     <input type=hidden name="oid" value="a070c000012bIYR"> <!-- Organization ID, will not change -->
-                    <input type=hidden name="retURL" value="https://breakingmediaLicensing.com/Fashionista/index.php?ty=true">
+                    <input type=hidden name="retURL" value="https://breakingmedialicensing.com/Fashionista/index.php?ty=true">
 
                         <!--  ----------------------------------------------------------------------  -->
                         <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -97,24 +97,33 @@
                         <!--  ----------------------------------------------------------------------  -->
 
                     <label for="FirstName" style="margin-top: 40px;">First name <sup>*</sup></label>
-                    <input type="text" id="FirstName" name="FirstName" placeholder="ex. John"/>
+                    <input type="text" id="FirstName" name="FirstName" placeholder="ex. John" required/>
+
                     <label for="LastName">Last name <sup>*</sup></label>
-                    <input type="text" id="LastName" name="LastName" placeholder="ex. Doe">
-                    <label for="Company">Company <sup>*</sup></label>
-                    <input type="text" id="Company" name="Company" placeholder="ex. ABC Company">
+                    <input type="text" id="LastName" name="LastName" placeholder="ex. Doe" required>
+                    
+                    <label for="Company" required>Company <sup>*</sup></label>
+                    <input type="text" id="Company" name="Company" placeholder="ex. ABC Company" required>
+                    
                     <label for="Phone">Phone <sup>*</sup></label>
-                    <input type="text" id="Phone" name="Phone" placeholder="ex. (555) 123-4567">
+                    <input type="tel" id="Phone" name="Phone" placeholder="ex. 555-123-4567" required>
+                    
                     <label for="Email">Email <sup>*</sup></label>
-                    <input type="text" id="Email" name="Email" placeholder="ex. john.doe@gmail.com">
+                    <input type="email" id="Email" name="Email" placeholder="ex. john.doe@gmail.com" pattern="[^@\s]+@[^@\s]+" required>
+                    
                     <label for="ArticleName">Article title</label>
                     <input type="text" id="ArticleName" name="ArticleName" placeholder="ex. The best site to...">
+                    
                     <label for="ArticleURL">Article URL (if online)</label>
-                    <input type="text" id="ArticleURL" name="ArticleURL" placeholder="ex. https://myarticleurl.com">
+                    <input type="url" id="ArticleURL" name="ArticleURL" placeholder="ex. https://myarticleurl.com">
+                    
                     <label for="ArticleDate">Article Publication Date</label>
-                    <input type="text" id="ArticleDate" name="ArticleDate" placeholder="ex. 01/20/2020">
+                    <input type="date" id="ArticleDate" name="ArticleDate" placeholder="ex. 01/20/2020">
+                    
                     <label for="HowWouldYouUse">How would you like to use this content? <sup>*</sup></label>
-                    <textarea id="HowWouldYouUse" name="HowWouldYouUse" placeholder="ex. Advertising campaign"></textarea>
-                    <button type="submit" class="button">Submit</button>
+                    <textarea id="HowWouldYouUse" name="HowWouldYouUse" placeholder="ex. Advertising campaign" required></textarea>
+                    
+                    <button type="submit" name="submit" class="button">Submit</button>
                 </form>
                 <?php if (isset($_GET["ty"]) && $_GET["ty"]): ?>
                 <p>Thank you for your interest in licensing content from Fashionista. One of our account executives will be in touch within the next 24 hours to discuss the details with you.</p>
