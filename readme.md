@@ -7,5 +7,7 @@
 
 This project includes a docker-compose.yml file to handle local development. Do not include this file when updating the version on the server.  
 
-This project is us gulp as the build tool. See below for the current tasks. Also, if you are running this in windows be sure to use node from ***command prompt*** instead of **WSL**. Gulp doesn't appear to detect file changes for the watch statement if you are running the watch task from WSL. 
+This project use gulp as the build tool. See gulpfile.js in the respective directory to see current tasks. Take note that subpages have their own gulp files. Also, if you are running this in windows be sure to use node from ***command prompt*** instead of **WSL**. Gulp doesn't appear to detect file changes for the watch statement if you are running the watch task from WSL in a mounted directory. 
+
+
 
